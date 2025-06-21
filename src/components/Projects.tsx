@@ -12,7 +12,7 @@ const Projects: React.FC = () => {
     description: "A website that helps customers check if a book is available in nearby stores. The platform simplifies the book shopping experience by showing real-time availability information.",
     technologies: ["HTML", "CSS", "JavaScript"],
     githubUrl: "https://github.com/bhoomijongra/Portfolio.git", // Replace with your actual GitHub repo URL
-    liveUrl: "portfolio-sooty-two-6jaqwwld3s.vercel.app", // Replace with your actual live demo URL
+    liveUrl: "https://bookscout-website.vercel.app/", // Replace with your actual live demo URL
     imageUrl: "https://images.pexels.com/photos/1370295/pexels-photo-1370295.jpeg?auto=compress&cs=tinysrgb&w=800" // Book-related stock image
   };
 
@@ -94,15 +94,7 @@ const Projects: React.FC = () => {
           </div>
         </div>
 
-        {/* Instructions for updating links */}
-        <div className="mt-8 p-4 bg-blue-50 rounded-lg border border-blue-200">
-          <h4 className="font-semibold text-blue-800 mb-2">📝 Update Your Project Links:</h4>
-          <div className="text-sm text-blue-700 space-y-1">
-            <p>• Replace <code className="bg-blue-100 px-1 rounded">githubUrl</code> with your actual GitHub repository URL</p>
-            <p>• Replace <code className="bg-blue-100 px-1 rounded">liveUrl</code> with your hosted project URL (GitHub Pages, Netlify, etc.)</p>
-            <p>• Optionally update the <code className="bg-blue-100 px-1 rounded">imageUrl</code> with a screenshot of your project</p>
-          </div>
-        </div>
+       
 
         {/* Future projects placeholder */}
         <div className="mt-12 text-center">
