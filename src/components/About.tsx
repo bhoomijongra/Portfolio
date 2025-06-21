@@ -32,7 +32,7 @@ const About: React.FC = () => {
                 <img
                   src={profileImageUrl}
                   alt="Bhoomi Jongra Profile Picture"
-                  className="w-full h-full object-cover object-top object-right"
+                  className="w-full h-full object-cover object-top object-center"
                   onError={(e) => {
                     // Fallback to initials if image fails to load
                     const target = e.target as HTMLImageElement;
