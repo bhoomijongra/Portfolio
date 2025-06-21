@@ -31,7 +31,7 @@ const About: React.FC = () => {
               {/* Profile Picture */}
               <div className="w-64 h-64 bg-blue-100 rounded-full flex items-center justify-center overflow-hidden border-4 border-white shadow-lg">
                 <img 
-                  src="/portfolio/PXL_20240818_140231519.jpg"
+                  src={profileImageUrl}
                   alt="Bhoomi Jongra Profile Picture"
                   className="w-full h-full object-cover"
                   onError={(e) => {
