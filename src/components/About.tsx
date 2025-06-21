@@ -76,15 +76,7 @@ const About: React.FC = () => {
               My journey in technology is driven by curiosity and a desire to build solutions that make a difference.
             </p>
             
-            <div className="flex space-x-4">
-              {/* Placeholder for resume button */}
-              <button className="px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors shadow-md">
-                Download Resume
-              </button>
-            </div>
-          </div>
-        </div>
-        
+           
         {/* Scroll down indicator */}
         <div className="mt-16 flex justify-center">
           <button 
