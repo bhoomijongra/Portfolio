@@ -11,7 +11,7 @@ const Projects: React.FC = () => {
     title: "BookScout",
     description: "A website that helps customers check if a book is available in nearby stores. The platform simplifies the book shopping experience by showing real-time availability information.",
     technologies: ["HTML", "CSS", "JavaScript"],
-    githubUrl: "https://github.com/bhoomijongra/Portfolio.git", // Replace with your actual GitHub repo URL
+    githubUrl: "https://github.com/bhoomijongra/Bookscout-website.git", // Replace with your actual GitHub repo URL
     liveUrl: "https://bookscout-website.vercel.app/", // Replace with your actual live demo URL
     imageUrl: "https://images.pexels.com/photos/1370295/pexels-photo-1370295.jpeg?auto=compress&cs=tinysrgb&w=800" // Book-related stock image
   };
