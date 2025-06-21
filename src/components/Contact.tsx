@@ -39,7 +39,7 @@ const Contact: React.FC = () => {
                 </a>
                 
                 <a 
-                  href="https://www.linkedin.com/in/bhoomijongra-7682b4294" 
+                  href="https://www.linkedin.com/in/bhoomi-jongra" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="flex items-center group"
