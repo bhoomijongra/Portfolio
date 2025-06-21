@@ -87,6 +87,7 @@ const About: React.FC = () => {
             <ChevronDown size={32} />
           </button>
         </div>
+    </div>
     </section>
   );
 
