@@ -26,7 +26,7 @@ const Contact: React.FC = () => {
               
               <div className="space-y-6">
                 <a 
-                  href="mailto:bhoomi.jongra@example.com" 
+                  href="mailto:bhoomi.jongra@gmail.com" 
                   className="flex items-center group"
                 >
                   <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4 group-hover:bg-blue-200 transition-colors">
@@ -34,12 +34,12 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <p className="text-sm text-gray-500">Email</p>
-                    <p className="text-gray-800 group-hover:text-blue-600 transition-colors">bhoomi.jongra@example.com</p>
+                    <p className="text-gray-800 group-hover:text-blue-600 transition-colors">bhoomi.jongra@gmail.com</p>
                   </div>
                 </a>
                 
                 <a 
-                  href="https://linkedin.com/in/bhoomijongra" 
+                  href="www.linkedin.com/in/bhoomi-jongra-7682b4294" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="flex items-center group"
