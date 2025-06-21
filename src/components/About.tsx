@@ -33,7 +33,7 @@ const About: React.FC = () => {
                   src={profileImageUrl}
                   alt="Bhoomi Jongra Profile Picture"
                   className="w-full h-full object-cover "
-                   style={{ objectPosition: 'center 20%' 'right 10%' }} // adjust % for perfect center
+                   style={{ objectPosition: 'center 20%' }} // adjust % for perfect center
                   onError={(e) => {
                     // Fallback to initials if image fails to load
                     const target = e.target as HTMLImageElement;
