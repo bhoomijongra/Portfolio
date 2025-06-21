@@ -24,14 +24,30 @@ const About: React.FC = () => {
         isVisible ? 'opacity-100' : 'opacity-0'
       }`}
     >
-      <div className="container mx-auto max-w-4xl">
+        <div className="container mx-auto max-w-4xl">
         <div className="flex flex-col md:flex-row gap-8 items-center">
           <div className="w-full md:w-1/2 flex justify-center">
             <div className="relative">
-              {/* Avatar placeholder with initials */}
-              <div className="w-64 h-64 bg-blue-100 rounded-full flex items-center justify-center overflow-hidden">
-                <span className="text-6xl font-bold text-blue-500">BJ</span>
+              {/* Profile Picture */}
+              <div className="w-64 h-64 bg-blue-100 rounded-full flex items-center justify-center overflow-hidden border-4 border-white shadow-lg">
+                <img 
+                  src={profileImageUrl}
+                  alt="Bhoomi Jongra Profile Picture"
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    // Fallback to initials if image fails to load
+                    const target = e.target as HTMLImageElement;
+                    target.style.display = 'none';
+                    const fallback = target.nextElementSibling as HTMLElement;
+                    if (fallback) fallback.style.display = 'flex';
+                  }}
+                />
+                {/* Fallback initials (hidden by default, shown if image fails) */}
+                <div className="w-full h-full bg-blue-100 rounded-full flex items-center justify-center" style={{display: 'none'}}>
+                  <span className="text-6xl font-bold text-blue-500">BJ</span>
+                </div>
               </div>
+              
               
               {/* Decorative elements */}
               <div className="absolute -top-4 -left-4 w-12 h-12 bg-pink-100 rounded-full z-0 animate-pulse"></div>
