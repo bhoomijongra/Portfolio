@@ -16,6 +16,16 @@ const Projects: React.FC = () => {
     imageUrl: "https://images.pexels.com/photos/1370295/pexels-photo-1370295.jpeg?auto=compress&cs=tinysrgb&w=800" // Book-related stock image
   };
 
+  const playstationProject = {
+  title: "PlayStation Game Hub",
+  description: "A sleek UI that showcases popular PlayStation games with trailers, ratings, and genres. Built for gamers who love exploring trending titles.",
+  technologies: ["React", "Tailwind CSS", "API Integration"],
+  githubUrl: "https://github.com/bhoomijongra/Play-Station.git", // replace if needed
+  liveUrl: "play-station-iota.vercel.app", // replace if needed
+  imageUrl: "https://images.pexels.com/photos/275033/pexels-photo-275033.jpeg?auto=compress&cs=tinysrgb&w=800" // PlayStation themed image
+};
+
+
   const handleLinkClick = (url: string, linkType: string) => {
     if (url.startsWith('https://github.com') || url.startsWith('https://')) {
       window.open(url, '_blank', 'noopener,noreferrer');
@@ -94,7 +104,63 @@ const Projects: React.FC = () => {
           </div>
         </div>
 
-       
+       {/* PlayStation Project Card */}
+<div className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow mt-12">
+  <div className="h-64 md:h-80 bg-gradient-to-br from-gray-900 to-gray-800 relative overflow-hidden">
+    <img 
+      src={playstationProject.imageUrl}
+      alt="PlayStation Project Preview"
+      className="w-full h-full object-cover"
+    />
+    <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+      <div className="text-center text-white">
+        <Code size={48} className="mx-auto mb-2" />
+        <p className="text-lg font-semibold">{playstationProject.title}</p>
+      </div>
+    </div>
+  </div>
+
+  <div className="p-6 md:p-8">
+    <div className="flex items-center mb-4">
+      <Code className="text-purple-500 mr-3" size={28} />
+      <h3 className="text-2xl font-bold text-gray-800">{playstationProject.title}</h3>
+    </div>
+
+    <p className="text-gray-600 mb-6 leading-relaxed">
+      {playstationProject.description}
+    </p>
+
+    <div className="flex flex-wrap gap-2 mb-6">
+      {playstationProject.technologies.map((tech) => (
+        <span 
+          key={tech}
+          className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium"
+        >
+          {tech}
+        </span>
+      ))}
+    </div>
+
+    <div className="flex flex-col sm:flex-row gap-4">
+      <button 
+        onClick={() => handleLinkClick(playstationProject.githubUrl, 'GitHub')}
+        className="flex items-center justify-center px-6 py-3 bg-gray-800 hover:bg-gray-900 text-white rounded-full transition-colors shadow-md"
+      >
+        <Code size={18} className="mr-2" />
+        <span>View Code</span>
+      </button>
+
+      <button 
+        onClick={() => handleLinkClick(playstationProject.liveUrl, 'Live Demo')}
+        className="flex items-center justify-center px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-full transition-colors shadow-md"
+      >
+        <ExternalLink size={18} className="mr-2" />
+        <span>Live Demo</span>
+      </button>
+    </div>
+  </div>
+</div>
+
 
         {/* Future projects placeholder */}
         <div className="mt-12 text-center">
