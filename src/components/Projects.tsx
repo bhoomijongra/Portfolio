@@ -21,7 +21,7 @@ const Projects: React.FC = () => {
   description: "A sleek UI that showcases popular PlayStation games with trailers, ratings, and genres. Built for gamers who love exploring trending titles.",
   technologies: ["React", "Tailwind CSS", "API Integration"],
   githubUrl: "https://github.com/bhoomijongra/Play-Station.git", // replace if needed
-  liveUrl: "play-station-iota.vercel.app", // replace if needed
+  liveUrl: "https://play-station-iota.vercel.app/", // replace if needed
   imageUrl: "https://images.pexels.com/photos/275033/pexels-photo-275033.jpeg?auto=compress&cs=tinysrgb&w=800" // PlayStation themed image
 };
 
