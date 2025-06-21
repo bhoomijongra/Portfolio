@@ -14,7 +14,7 @@ const About: React.FC = () => {
   };
 
   // Profile picture URL - Update this with your actual image
-  const profileImageUrl = ""portfolio/public/portfolio/PXL_20250612_081923276.jpg""; // Replace with your actual profile picture URL
+  const profileImageUrl = "portfolio/public/portfolio/PXL_20250612_081923276.jpg"; // Replace with your actual profile picture URL
 
   return (
     <section
