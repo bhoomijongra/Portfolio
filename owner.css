@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+ background-image: url('https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=1773&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); 
+    background-size: cover;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    height: 100vh;
+
+}
+.container {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+.login-container {
+  background-color: rgba(255, 255, 255, 0); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.input-group {
+    margin-bottom: 1.5em;
+}
+
+.label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 0.75em;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+button {
+    width: 100%;
+    padding: 0.75em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.signup-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
