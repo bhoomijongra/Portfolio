@@ -2,11 +2,6 @@ import React, { useRef } from 'react';
 import { Mail, Linkedin, Send } from 'lucide-react';
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
 
-const Contact: React.FC = () => {
-  const sectionRef = useRef<HTMLElement>(null);
-  const isVisible = useIntersectionObserver(sectionRef, { threshold: 0.1 });
-
-
 interface FormData {
   name: string;
   email: string;
@@ -90,15 +85,15 @@ const Contact: React.FC = () => {
       // Simulate API call - replace with your actual email service
       await new Promise(resolve => setTimeout(resolve, 2000));
       
-      // For now, we'll just log the form data and show success
-      console.log('Form submitted:', formData);
+      // For demonstration, we'll show the form data in console and show success
+      console.log('Form Data Submitted:', {
+        name: formData.name,
+        email: formData.email,
+        message: formData.message,
+        timestamp: new Date().toISOString()
+      });
       
-      // You can integrate with services like:
-      // - EmailJS
-      // - Netlify Forms
-      // - Your own backend API
-      // - Formspree
-      
+      // Show success message
       setSubmitStatus('success');
       setFormData({ name: '', email: '', message: '' });
       
@@ -119,6 +114,7 @@ const Contact: React.FC = () => {
       setIsSubmitting(false);
     }
   };
+
 
   return (
     <section 
