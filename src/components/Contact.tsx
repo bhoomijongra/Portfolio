@@ -1,7 +1,11 @@
 import React, { useRef } from 'react';
 import { Mail, Linkedin, Send } from 'lucide-react';
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
-{
+
+const Contact: React.FC = () => {More actions
+  const sectionRef = useRef<HTMLElement>(null);
+  const isVisible = useIntersectionObserver(sectionRef, { threshold: 0.1 });
+
 return (
     <section 
       id="contact" 
