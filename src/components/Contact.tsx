@@ -2,8 +2,7 @@ import React, { useRef } from 'react';
 import { Mail, Linkedin, Send } from 'lucide-react';
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
 
-
-  return (
+return (
     <section 
       id="contact" 
       ref={sectionRef}
