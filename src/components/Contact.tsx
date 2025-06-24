@@ -100,6 +100,5 @@ import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
       </div>
     </section>
   );
-};
 
 export default Contact;
