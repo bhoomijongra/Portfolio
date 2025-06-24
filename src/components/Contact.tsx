@@ -1,10 +1,7 @@
 import React, { useRef } from 'react';
 import { Mail, Linkedin, Send } from 'lucide-react';
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
-
-const Contact = () => {
-  // Optional: Call your hook here if needed
-  // const { ... } = useIntersectionObserver();
+{
 return (
     <section 
       id="contact" 
