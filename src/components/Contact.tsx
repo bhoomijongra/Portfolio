@@ -104,4 +104,3 @@ return (
     </section>
   );
 };
-export default Contact;
